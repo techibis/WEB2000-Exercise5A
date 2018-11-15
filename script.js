@@ -43,3 +43,41 @@ var pic2 = document.getElementById("secondPic");
 //alert(pic2.getAttribute("src"));
 pic2.setAttribute("title", "Be Careful!");
 pic2.setAttribute("alt", "Tour group photo.");
+
+
+var coupon = document.createElement("div");
+coupon.style.width = "600px";
+coupon.style.height = "300px";
+coupon.style.border = "2px dashed #000000";
+
+//coupon.style.backgroundImage = "url('airplane.jpg')";
+
+var h1tag = document.createElement("H1");
+var h1tagText = document.createTextNode("ON SALE NOW");
+h1tag.appendChild(h1tagText);
+coupon.appendChild(h1tag);
+
+var h2tag = document.createElement("H2");
+var h2tagText = document.createTextNode("get 30% off");
+h2tag.appendChild(h2tagText);
+coupon.appendChild(h2tag);
+
+var ptag = document.createElement("P");
+var ptagText = document.createTextNode("only valid with Salvi's Credit Card");
+ptag.appendChild(ptagText);
+coupon.appendChild(ptag);
+
+var myImg = document.createElement("img");
+myImg.src = "airplane.jpg"
+myImg.style.position = "relative";
+myImg.style.top = "-191px";
+myImg.style.opacity = "0.3";
+coupon.appendChild(myImg);
+
+
+
+document.body.appendChild(coupon);
+
+
+
+
